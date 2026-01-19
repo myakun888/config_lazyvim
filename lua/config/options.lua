@@ -4,3 +4,8 @@
 local opt = vim.opt
 
 opt.clipboard = vim.env.SSH_CONNECTION and "" or "unnamedplus"
+
+-- LSP Server to use for PHP.
+-- Set to "intelephense" to use intelephense instead of phpactor.
+-- vim.g.lazyvim_php_lsp = "intelephense"
+--
