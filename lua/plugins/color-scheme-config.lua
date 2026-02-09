@@ -81,6 +81,24 @@ return {
     },
   },
 
+  -- rosepine
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "auto", -- auto, main, moon, or dawn
+      dark_variant = "main", -- main, moon, or dawn
+      dim_inactive_windows = false,
+      extend_background_behind_borders = true,
+
+      styles = {
+        bold = true,
+        italic = true,
+        transparency = true,
+      },
+    },
+  },
+
   ---
   --- TODO: disini untuk configurasi load tema nya ,
   -- ini untuk load otomatis , agar lazyvim langsung menggunakan tema nya, saat di buka nvim
@@ -96,6 +114,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight-night",
+      -- colorscheme = "rose-pine",
     },
   },
 }
