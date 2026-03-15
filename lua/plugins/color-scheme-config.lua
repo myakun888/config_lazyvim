@@ -5,7 +5,7 @@ return {
   -- silahkan isi di sini, sesuai dengan scop nya, dan untuk meload nya ganti pada scopt lazyvim pada opts dengan nama tema nya
   -- agar rapi tutup fold, atau baris nya
 
-  -- gruvbox
+  -- NOTE: gruvbox
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
@@ -16,7 +16,7 @@ return {
       invert_selection = false,
       invert_signs = false,
       invert_tabline = false,
-      inverse = true, -- invert background for search, diffs, statuslines and errors
+      inverse = false, -- invert background for search, diffs, statuslines and errors
       contrast = "", -- can be "hard", "soft" or empty string
       palette_overrides = {},
       overrides = {},
@@ -24,7 +24,7 @@ return {
       transparent_mode = true,
     },
   },
-  -- kanagawa
+  -- NOTE: kanagawa
   {
     "rebelot/kanagawa.nvim",
     priority = 1000,
@@ -69,7 +69,7 @@ return {
     },
   },
 
-  -- tokyonight
+  -- NOTE: tokyonight
   {
     "folke/tokyonight.nvim",
     opts = {
@@ -81,7 +81,7 @@ return {
     },
   },
 
-  -- rosepine
+  -- NOTE: rosepine
   {
     "rose-pine/neovim",
     name = "rose-pine",
@@ -99,6 +99,32 @@ return {
     },
   },
 
+  -- NOTE: solarized-osaka
+  {
+    "craftzdog/solarized-osaka.nvim",
+    priority = 1000,
+    opts = {
+
+      transparent = true, -- Enable this to disable setting the background color
+      terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
+      styles = {
+        -- Style to be applied to different syntax groups
+        -- Value is any valid attr-list value for `:help nvim_set_hl`
+        comments = { italic = true },
+        keywords = { italic = true },
+        functions = {},
+        variables = {},
+        -- Background styles. Can be "dark", "transparent" or "normal"
+        sidebars = "dark", -- style for sidebars, see below
+        floats = "transparent", -- style for floating windows
+      },
+      sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
+      day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
+      hide_inactive_statusline = false, -- Enabling this option, will hide inactive statuslines and replace them with a thin border instead. Should work with the standard **StatusLine** and **LuaLine**.
+      dim_inactive = false, -- dims inactive windows
+      lualine_bold = false, -- Wh
+    },
+  },
   ---
   --- TODO: disini untuk configurasi load tema nya ,
   -- ini untuk load otomatis , agar lazyvim langsung menggunakan tema nya, saat di buka nvim
@@ -113,7 +139,9 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-night",
+      -- colorscheme = "solarized-osaka",
+      colorscheme = "gruvbox",
+      -- colorscheme = "tokyonight-night",
       -- colorscheme = "rose-pine",
     },
   },
