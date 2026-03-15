@@ -8,4 +8,10 @@ opt.clipboard = vim.env.SSH_CONNECTION and "" or "unnamedplus"
 -- LSP Server to use for PHP.
 -- Set to "intelephense" to use intelephense instead of phpactor.
 -- vim.g.lazyvim_php_lsp = "intelephense"
---
+
+-- set speel defaul off
+--  untuk aktifkan bisa di togle saja, dengan  leader + u + s
+opt.spell = false
+-- set speel bahasa indonesia and english
+opt.spelllang = { "id", "en" }
+opt.termguicolors = true
