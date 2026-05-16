@@ -13,5 +13,5 @@ opt.clipboard = vim.env.SSH_CONNECTION and "" or "unnamedplus"
 --  untuk aktifkan bisa di togle saja, dengan  leader + u + s
 opt.spell = false
 -- set speel bahasa indonesia and english
-opt.spelllang = { "id", "en" }
+-- opt.spelllang = { "id", "en" }
 opt.termguicolors = true

@@ -50,6 +50,7 @@ return {
       "xml",
       "yaml",
       "php", -- ini tambahan
+      "blade",
     },
   },
   ---@param opts lazyvim.TSConfig
