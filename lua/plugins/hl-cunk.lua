@@ -21,9 +21,11 @@ return {
         { fg = "#c21f30" }, -- ini untuk jika ada kesalahan , kurang sintax
       },
     },
+    -- line number di buat false saja, issue lagh pada laravel file welcome.blade
     line_num = {
+
       -- ini berguna agar nomor/number aktiv dan diberikan warna, ketika berada dalam jangkauan cursor atau di kode yang sedang aktif
-      enable = true,
+      enable = false,
       -- ini warna nya
       -- style = "#FFD700",
       style = "#DAA520",
